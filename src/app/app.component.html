@@ -1,10 +1,31 @@
 <div>
-    <h3>This is heading</h3>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora architecto perferendis repellat veniam rem, ipsum
-    voluptatibus facere facilis quasi pariatur consequatur, excepturi nihil totam dicta! Aspernatur, incidunt cupiditate
-maiores quos voluptatum veritatis ipsa odit explicabo. Nesciunt illum, aspernatur voluptas dicta commodi doloremque
-numquam facilis perspiciatis sequi repellendus hic ipsam, suscipit fugiat asperiores ratione omnis. Odio veritatis
-ipsam, facilis deleniti temporibus recusandae unde voluptatem distinctio id blanditiis error veniam dolorem cum maxime
-non nam sequi quibusdam accusamus dolor rem eligendi. Blanditiis, officia harum dolorum inventore distinctio nisi iure
-consectetur repellat soluta modi nemo odio, ad, quae delectus alias ratione? Eaque, ullam.
+    <div class="cn">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <a class="navbar-brand" routerLink="/my-todo">
+                <img src="../assets/notepad.png" width="35" height="30" class="d-inline-block align-top" alt="">
+                Daily Pointer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="/my-todo" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about">About</a>
+                    </li>
+                    
+                   
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <router-outlet></router-outlet>
 </div>
